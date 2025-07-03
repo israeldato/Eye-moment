@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eye - Moment</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Varela Round', sans-serif;
+      background: linear-gradient(to right, #f9f9f9, #e1f5fe);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #ff4081, #ff6e40);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .highlight {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #00796b;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      transition: 0.4s;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .cta {
+      background-color: #00bcd4;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin: 2rem;
+      border-radius: 10px;
+    }
+    .cta h2 {
+      margin-bottom: 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      width: 100%;
+      max-width: 400px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 30px;
+      background-color: #ff4081;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #e91e63;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f1f1f1;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Eye - Moment</h1>
+  <p>תפסו את הרגע. הדפיסו את הזיכרון.</p>
+</header>
+
+<p class="highlight">שירות צילום חדשני שמצלם ומדפיס לאורחים את הרגעים הכי מרגשים – במקום ובחיוך 😄</p>
+
+<div class="gallery">
+  <img src="https://source.unsplash.com/featured/?event,smile" alt="אירוע שמח">
+  <img src="https://source.unsplash.com/featured/?party,photo" alt="הדפסת תמונה">
+  <img src="https://source.unsplash.com/featured/?wedding,photobooth" alt="תמונה בחתונה">
+</div>
+
+<div class="cta">
+  <h2>רוצה אותנו באירוע שלך?</h2>
+  <p>השאר פרטים כאן ונחזור אליך עם הצעה מותאמת במיוחד לאירוע שלך:</p>
+  <form onsubmit="alert('הפרטים נשלחו בהצלחה! נחזור אליך בקרוב 😊'); return false;">
+    <input type="text" placeholder="שם מלא" required>
+    <input type="tel" placeholder="מספר טלפון" required>
+    <textarea placeholder="פרטים נוספים על האירוע שלך" rows="4"></textarea>
+    <button type="submit">שלחו לי פרטים</button>
+  </form>
+</div>
+
+<footer>
+  &copy; 2025 Eye - Moment. כל הזכויות שמורות.
+</footer>
+
+</body>
+</html>
