@@ -22,7 +22,9 @@
       padding: 40px 20px;
     }
     section {
-      margin: 60px 20px;
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+      border-bottom: 1px solid #e0e0e0;
     }
     h1, h2 {
       margin-bottom: 20px;
@@ -33,6 +35,7 @@
       max-width: 800px;
       margin-left: auto;
       margin-right: auto;
+      line-height: 1.8;
     }
     img, video {
       width: 100%;
@@ -41,7 +44,7 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       margin-top: 20px;
     }
-    .contact-btn {
+    .contact-btn, .whatsapp-btn {
       display: inline-block;
       padding: 14px 28px;
       background-color: #00bcd4;
@@ -49,15 +52,14 @@
       border-radius: 10px;
       font-size: 1.1em;
       text-decoration: none;
-      margin: 30px 0;
+      margin: 30px auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
     }
     footer {
       background-color: #f0f0f0;
       padding: 25px;
       font-size: 0.9em;
-      margin-top: 40px;
     }
-
     @media (max-width: 768px) {
       header {
         padding: 30px 10px;
@@ -68,7 +70,7 @@
       h2 {
         font-size: 1.4em;
       }
-      .contact-btn {
+      .contact-btn, .whatsapp-btn {
         padding: 12px 20px;
         font-size: 1em;
       }
@@ -86,28 +88,31 @@
   </p>
 </header>
 
-<section style="text-align: center; padding: 50px 20px; background-color: #f5f5f5;">
-  <h2 style="font-size: 28px; margin-bottom: 20px;">🎉 עמדת הצילום שתהפוך את האירוע שלכם לבלתי נשכח</h2>
-  <p style="font-size: 18px; max-width: 600px; margin: 0 auto 30px; line-height: 1.8;">
-    לא עוד תמונות רגילות. עמדת הצילום שלנו תגרום לאורחים שלכם לחייך, לצחוק, ולהשאיר זיכרונות מרגשים לכל החיים.  
-    תוסיפו לזה הדפסה במקום וסרטון תדמית? יש לכם מתכון לאירוע בלתי נשכח!
+<section>
+  <h2>🎉 עמדת הצילום שתהפוך את האירוע שלכם לבלתי נשכח</h2>
+  <p>
+    !לא עוד תמונות רגילות. עמדת הצילום שלנו תגרום לאורחים שלכם לחייך, לצחוק, ולהשאיר זיכרונות מרגשים לכל החיים.<br>
   </p>
-  <img src="booth-setup.JPG" alt="עמדת צילום לאירועים" style="max-width: 90%; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin-bottom: 30px;">
-
-  <a href="https://wa.me/972534904067?text=היי, אפשר פרטים לגבי האירוע? 😊" 
-     style="display: inline-block; padding: 15px 30px; background-color: #00bcd4; color: white; font-size: 18px; border-radius: 30px; text-decoration: none; box-shadow: 0 2px 10px rgba(0,0,0,0.2);">
+  <img src="booth-setup.JPG" alt="עמדת צילום לאירועים">
+  <br>
+  <a href="https://wa.me/972534904067?text=היי, אפשר פרטים לגבי האירוע? 😊" class="whatsapp-btn">
      דברו איתנו עכשיו 📩
   </a>
 </section>
 
-
 <section>
-  <h2>ההדפסה במקום</h2>
+  <h2>📸 ההדפסה במקום</h2>
+  <p>
+    אצלנו לא מחכים. התמונות מודפסות במקום ומועברות ישירות לאורחים - מזכרת אמיתית לכל החיים.
+  </p>
   <img src="photo-strip.JPG" alt="תמונה מודפסת">
 </section>
 
 <section>
-  <h2>הצצה לאירוע</h2>
+  <h2>🎥 הצצה לאירוע</h2>
+  <p>
+    רוצים לראות איך זה נראה באירוע אמיתי? צפו בסרטון ותבינו למה כולם מדברים על Eye Moments!
+  </p>
   <video src="event-promo.MP4" controls></video>
 </section>
 
