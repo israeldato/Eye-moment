@@ -1,140 +1,118 @@
-
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Eye - Moment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eye Moments - עמדת צילום לאירועים</title>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;600&display=swap" rel="stylesheet" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    html {
+      scroll-behavior: smooth;
+    }
     body {
+      font-family: 'Assistant', sans-serif;
       margin: 0;
-      font-family: 'Varela Round', sans-serif;
-      background: linear-gradient(to right, #f9f9f9, #e1f5fe);
-      color: #333;
+      background-color: #ffffff;
+      color: #222;
+      text-align: center;
     }
     header {
-      background: linear-gradient(to right, #ff4081, #ff6e40);
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
-    }
-    .highlight {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #00796b;
-      margin: 2rem 0;
-      text-align: center;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-      padding: 1rem 2rem;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 12px;
-      transition: 0.4s;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-    .cta {
       background-color: #00bcd4;
       color: white;
-      text-align: center;
-      padding: 2rem;
-      margin: 2rem;
-      border-radius: 10px;
+      padding: 40px 20px;
     }
-    .cta h2 {
-      margin-bottom: 1rem;
+    section {
+      margin: 60px 20px;
     }
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-      margin-top: 1rem;
+    h1, h2 {
+      margin-bottom: 20px;
     }
-    input, textarea {
-      padding: 0.8rem;
+    p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    img, video {
       width: 100%;
-      max-width: 400px;
-      border: none;
-      border-radius: 6px;
-      font-size: 1rem;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin-top: 20px;
     }
-    button {
-      padding: 1rem 2rem;
-      font-size: 1rem;
-      border: none;
-      border-radius: 30px;
-      background-color: #ff4081;
+    .contact-btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background-color: #00bcd4;
       color: white;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    button:hover {
-      background-color: #e91e63;
+      border-radius: 10px;
+      font-size: 1.1em;
+      text-decoration: none;
+      margin: 30px 0;
     }
     footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #f1f1f1;
-      font-size: 0.9rem;
-      margin-top: 2rem;
+      background-color: #f0f0f0;
+      padding: 25px;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 30px 10px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+      h2 {
+        font-size: 1.4em;
+      }
+      .contact-btn {
+        padding: 12px 20px;
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 <body>
 
-
 <header>
-  <h1>Eye - Moments</h1>
-  <p>תפסו את הרגע. הדפיסו את הזיכרון.</p>
+  <h1>Eye - Moment</h1>
+  <p>שומרים את הרגעים הבלתי נשכחים שלכם , עם תמונות באיכות הכי גבוהה שיש, מרימים לכם את האירוע לשמיים!</p>
 </header>
 
- <p class="highlight">שומרים את הרגעים הבלתי נשכחים שלכם, עם תמונות באיכות הכי גבוהה שיש! 📸 מרימים לכם את האירוע לשמיים!</p> 
+<section>
+  <h2>העמדה באירוע</h2>
+  <img src="booth-setup.JPG" alt="עמדת צילום">
+</section>
 
-<div style="text-align: center; padding: 20px; direction: rtl; font-family: Arial;">
-  <h2>עמדת הצילום שלנו 🎉</h2>
-  <img src="booth-setup.JPG" alt="עמדת צילום" style="width: 90%; max-width: 500px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.2); margin-bottom: 30px;">
+<section>
+  <a class="contact-btn" href="https://wa.me/972534904067?text=היי,%20אפשר%20פרטים%20לגבי%20אירוע%20?:)" target="_blank">
+    דברו איתנו עכשיו 💬
+  </a>
+</section>
 
-  <h2>הדפסת תמונה 🖨️</h2>
-  <img src="photo-strip.JPG" alt="תמונת הדפסה" style="width: 90%; max-width: 500px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.2); margin-bottom: 30px;">
+<section>
+  <h2>ההדפסה במקום</h2>
+  <img src="photo-strip.JPG" alt="תמונה מודפסת">
+</section>
 
-  <h2>הצצה לאירוע 🎥</h2>
-  <video controls style="width: 90%; max-width: 600px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.2); margin-bottom: 30px;">
-    <source src="event-promo.MP4" type="video/mp4">
-    הדפדפן שלך לא תומך בהצגת וידאו.
-  </video>
-</div>
+<section>
+  <h2>הצצה לאירוע</h2>
+  <video src="event-promo.MP4" controls></video>
+</section>
 
-<div class="cta">
-  <h2>רוצה אותנו באירוע שלך?</h2>
-  <p>השאר פרטים כאן ונחזור אליך עם הצעה מותאמת במיוחד לאירוע שלך:</p>
-  <a href="https://wa.me/972534904067?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A4%D7%A9%D7%A8%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D%20%D7%9C%D7%92%D7%91%D7%99%20%D7%90%D7%99%D7%A8%D7%95%D7%A2%20%3F%20%3A%29"
-   target="_blank" 
-   style="display: inline-block; padding: 12px 20px; background-color: #25D366; color: white; font-size: 18px; text-decoration: none; border-radius: 8px; font-weight: bold;">
-   📲 היי, דברו איתי בוואטסאפ!
-</a>
-</div>
+<section>
+  <a class="contact-btn" href="https://wa.me/972534904067?text=היי,%20אפשר%20פרטים%20לגבי%20אירוע%20?:)" target="_blank">
+    דברו איתנו בוואטסאפ 💬
+  </a>
+</section>
 
 <footer>
-  &copy; 2025 Eye - Moment. כל הזכויות שמורות.
+  &copy; 2025 Eye Moments | כל הזכויות שמורות
 </footer>
 
 </body>
 </html>
+
