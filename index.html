@@ -17,9 +17,12 @@
       text-align: center;
     }
     header {
-      background-color: #00bcd4;
-      color: black;
+      background-color: #e0f7fa;
       padding: 40px 20px;
+    }
+    header img.logo {
+      max-width: 120px;
+      margin-bottom: 20px;
     }
     section {
       margin: 60px 20px;
@@ -33,11 +36,12 @@
       max-width: 800px;
       margin-left: auto;
       margin-right: auto;
+      line-height: 1.7;
     }
     img, video {
       width: 100%;
       max-width: 600px;
-      border-radius: 12px;
+      border-radius: 16px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       margin-top: 20px;
     }
@@ -50,7 +54,13 @@
       font-size: 1.1em;
       text-decoration: none;
       margin: 30px 0;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .highlight-section {
+      background-color: #f5f5f5;
+      padding: 60px 20px;
+      border-radius: 16px;
+      margin: 40px 10px;
     }
     footer {
       background-color: #f0f0f0;
@@ -58,7 +68,6 @@
       font-size: 0.9em;
       margin-top: 40px;
     }
-
     @media (max-width: 768px) {
       header {
         padding: 30px 10px;
@@ -79,7 +88,8 @@
 <body>
 
 <header>
-  <h1>Eye - Moments</h1>
+  <img src="EA905905-BA72-4FDB-8911-E0F78B3DDEEA.jpeg" alt="Eye Moments Logo" class="logo">
+  <h1>Eye Moments</h1>
   <p>
     שומרים את הרגעים הבלתי נשכחים שלכם<br>
     עם תמונות באיכות הכי גבוהה שיש 📸<br>
@@ -87,36 +97,32 @@
   </p>
 </header>
 
-<section style="text-align: center; padding: 50px 20px; background-color: #f5f5f5;">
-  <h2 style="font-size: 28px; margin-bottom: 20px;">🎉 עמדת הצילום שתהפוך את האירוע שלכם לבלתי נשכח</h2>
-  <p style="font-size: 18px; max-width: 600px; margin: 0 auto 30px; line-height: 1.8;">
-    לא עוד תמונות רגילות. עמדת הצילום שלנו תגרום לאורחים שלכם לחייך, לצחוק, ולהשאיר זיכרונות מרגשים לכל החיים.  
+<section class="highlight-section">
+  <h2>🎉 עמדת הצילום שתהפוך את האירוע שלכם לבלתי נשכח</h2>
+  <p>
+    לא עוד תמונות רגילות. עמדת הצילום שלנו תגרום לאורחים שלכם לחייך, לצחוק, ולהשאיר זיכרונות מרגשים לכל החיים.
   </p>
-  <img src="booth-setup.JPG" alt="עמדת צילום לאירועים" style="max-width: 90%; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin-bottom: 30px;">
+  <img src="booth-setup.JPG" alt="עמדת צילום לאירועים">
+  <a href="https://wa.me/972534904067?text=היי, אפשר פרטים לגבי האירוע? 😊" class="contact-btn">דברו איתנו עכשיו 📩</a>
+</section>
 
-  <a href="https://wa.me/972534904067?text=היי, אפשר פרטים לגבי האירוע? 😊" 
-     class="contact-btn">
-     דברו איתנו עכשיו 📩
-  </a>
-<!-- Section: ההדפסה במקום -->
-<section style="text-align: center; padding: 50px 20px; background-color: #f5f5f5;">
-  <h2 style="font-size: 28px; margin-bottom: 20px;">🖨️ ההדפסה במקום</h2>
-  <p style="font-size: 18px; max-width: 600px; margin: 0 auto 30px; line-height: 1.8;">
+<section class="highlight-section">
+  <h2>🖨️ ההדפסה במקום</h2>
+  <p>
     אצלנו לא מחכים. התמונות מודפסות במקום ומועברות ישירות לאורחים – מזכרת אמיתית לכל החיים!
   </p>
-  <img src="photo-strip.JPG" alt="תמונה מודפסת" style="max-width: 90%; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin-bottom: 30px;">
+  <img src="photo-strip.JPG" alt="תמונה מודפסת">
 </section>
 
-<!-- Section: הצצה לאירוע -->
-<section style="text-align: center; padding: 50px 20px; background-color: #ffffff;">
-  <h2 style="font-size: 28px; margin-bottom: 20px;">🎬 הצצה לאירוע</h2>
-  <p style="font-size: 18px; max-width: 600px; margin: 0 auto 30px; line-height: 1.8;">
+<section class="highlight-section">
+  <h2>🎬 הצצה לאירוע</h2>
+  <p>
     רוצים לראות איך זה נראה באירוע אמיתי? צפו בסרטון ותבינו למה כולם מדברים על Eye Moments!
   </p>
-  <video src="event-promo.MP4" controls poster="video-thumbnail.PNG"
-         style="max-width: 90%; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-  </video>
+  <video controls poster="video-thumbnail.PNG" src="event-promo.MP4"></video>
 </section>
+
+<section>
   <a class="contact-btn" href="https://wa.me/972534904067?text=היי,%20אפשר%20פרטים%20לגבי%20אירוע%20?:)" target="_blank">
     דברו איתנו בוואטסאפ 💬
   </a>
