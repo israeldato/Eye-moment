@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8" />
@@ -12,22 +12,23 @@
     body {
       font-family: 'Assistant', sans-serif;
       margin: 0;
-      background-color: #ffffff;
+      background-color: #f7eee1;
       color: #222;
       text-align: center;
     }
     header {
-      background-color: #00bcd4;
+      background-color: #d2b48c;
       color: black;
       padding: 40px 20px;
+      position: relative;
     }
-    header img.logo {
-      max-width: 130px;
+    header img {
+      width: 100px;
+      border-radius: 50%;
       margin-bottom: 20px;
-      border-radius: 10px;
     }
     section {
-      padding: 60px 20px;
+      margin: 60px 20px;
     }
     h1, h2 {
       margin-bottom: 20px;
@@ -38,38 +39,32 @@
       max-width: 800px;
       margin-left: auto;
       margin-right: auto;
-      line-height: 1.8;
     }
     img, video {
       width: 100%;
-      max-width: 800px;
-      border-radius: 15px;
+      max-width: 600px;
+      border-radius: 12px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       margin-top: 20px;
     }
     .contact-btn {
       display: inline-block;
       padding: 14px 28px;
-      background-color: #00bcd4;
+      background-color: #8b5a2b;
       color: white;
       border-radius: 10px;
       font-size: 1.1em;
       text-decoration: none;
       margin: 30px 0;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-    }
-    .highlight-section {
-      background-color: #f5f5f5;
-      padding: 60px 20px;
-      border-radius: 16px;
-      margin: 40px 10px;
     }
     footer {
-      background-color: #f0f0f0;
+      background-color: #8b5a2b;
       padding: 25px;
       font-size: 0.9em;
+      color: white;
       margin-top: 40px;
     }
+
     @media (max-width: 768px) {
       header {
         padding: 30px 10px;
@@ -84,49 +79,53 @@
         padding: 12px 20px;
         font-size: 1em;
       }
-      header img.logo {
-        max-width: 100px;
-      }
     }
   </style>
 </head>
 <body>
-<header class="bg-[#D7BFA3] text-[#4B3A2F] py-20 text-center">
-  <img src="images/logo.jpg" alt="Eye Moments Logo" class="w-20 mx-auto mb-4 rounded-full">
-  <h1 class="text-4xl font-bold mb-4">Eye - Moments</h1>
-  <p class="text-xl">
-    שומרים את הרגעים הבלתי נשכחים שלכם<br />
-    עם תמונות באיכות הכי גבוהה שיש 📸<br />
+
+<header>
+  <img src="logo.jpg" alt="לוגו Eye Moments">
+  <h1>Eye - Moments</h1>
+  <p>
+    שומרים את הרגעים הבלתי נשכחים שלכם<br>
+    עם תמונות באיכות הכי גבוהה שיש 📸<br>
     מרימים לכם את האירוע לשמיים! 🌟
   </p>
 </header>
-<section class="highlight-section">
+
+<section style="background-color:#f3e5d8; padding: 50px 20px;">
   <h2>🎉 עמדת הצילום שתהפוך את האירוע שלכם לבלתי נשכח</h2>
   <p>
     לא עוד תמונות רגילות. עמדת הצילום שלנו תגרום לאורחים שלכם לחייך, לצחוק, ולהשאיר זיכרונות מרגשים לכל החיים.
+    תוסיפו לזה הדפסה במקום וסרטון תדמית? יש לכם מתכון לאירוע בלתי נשכח!
   </p>
   <img src="booth-setup.JPG" alt="עמדת צילום לאירועים">
-  <a href="https://wa.me/972502381861?text=היי, אפשר פרטים לגבי האירוע? 😊" class="contact-btn">דברו איתנו עכשיו 📩</a>
-</section>
-
-<section class="highlight-section">
-  <h2>🖨️ ההדפסה במקום</h2>
-  <p>
-    אצלנו לא מחכים. התמונות מודפסות במקום ומועברות ישירות לאורחים ! מזכרת אמיתית לכל החיים.
-  </p>
-  <img src="photo-strip.JPG" alt="תמונה מודפסת">
-</section>
-
-<section class="highlight-section">
-  <h2>🎬 הצצה לאירוע</h2>
-  <p>
-    רוצים לראות איך זה נראה באירוע אמיתי? צפו בסרטון ותבינו למה כולם מדברים על Eye Moments!
-  </p>
-  <video controls poster="video-thumbnail.PNG" src="event-promo.MP4"></video>
+  <br>
+  <a class="contact-btn" href="https://wa.me/972502381861?text=היי, אפשר פרטים לגבי האירוע? 😊">
+    דברו איתנו עכשיו 💬
+  </a>
 </section>
 
 <section>
-  <a href="https://wa.me/972502381861?text=היי, אפשר פרטים לגבי האירוע? 😊" class="contact-btn">דברו איתנו עכשיו 📩</a>
+  <h2>ההדפסה במקום</h2>
+  <p>אצלנו לא מחכים. התמונות מודפסות במקום ומועברות ישירות לאורחים – מזכרת אמיתית לכל החיים!</p>
+  <img src="photo-strip.JPG" alt="תמונה מודפסת">
+</section>
+
+<section>
+  <h2>רוצים לראות איך זה נראה באירוע אמיתי?</h2>
+  <p>צפו בסרטון וגלו למה כולם מדברים על Eye Moments!</p>
+  <video controls poster="video-thumbnail.PNG">
+    <source src="event-promo.MP4" type="video/mp4">
+    הדפדפן שלך לא תומך בהצגת וידאו.
+  </video>
+</section>
+
+<section>
+  <a class="contact-btn" href="https://wa.me/972502381861?text=היי,%20אפשר%20פרטים%20לגבי%20אירוע%20?:)" target="_blank">
+    דברו איתנו בוואטסאפ 💌
+  </a>
 </section>
 
 <footer>
@@ -135,3 +134,4 @@
 
 </body>
 </html>
+
